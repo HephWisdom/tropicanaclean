@@ -49,9 +49,9 @@ The comparison uses `oven.jpg` for both layers; the left layer has CSS brightnes
 
 ## Professional cleaning videos
 
-Both local videos are 60-second edits of licensed footage showing professional cleaners in matching uniforms working in a modern home. They are illustrative stock footage, not TropicanaClean staff, clients or completed work. Video sources and licences are recorded here; visible Pexels credit labels were removed at the user’s request. Accessible media descriptions identify the footage as illustrative.
+Both local videos are 60-second edits of licensed footage. The hero pairs inviting, bright home interiors with careful surface cleaning; the care section shows uniformed professional cleaners at work. They are illustrative stock footage, not TropicanaClean staff, clients or completed work. Video sources and licences are recorded here; visible Pexels credit labels were removed at the user’s request. Accessible media descriptions identify the footage as illustrative.
 
-All four clips are by Tima Miroshnichenko and are covered by the [Pexels licence](https://www.pexels.com/license/), which permits free commercial use and modification.
+All clips are covered by the [Pexels licence](https://www.pexels.com/license/), which permits free commercial use and modification. The four care-section clips below are by Tima Miroshnichenko.
 
 | Source                                                                                                                   | Download                                                                     |
 | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- |
@@ -60,9 +60,19 @@ All four clips are by Tima Miroshnichenko and are covered by the [Pexels licence
 | [Professional floor mopping](https://www.pexels.com/video/floor-being-mopped-6195524/)                                   | https://videos.pexels.com/video-files/6195524/6195524-hd_1920_1080_25fps.mp4 |
 | [Uniformed cleaners working in a living room](https://www.pexels.com/video/women-cleaning-the-floor-6197066/)            | https://videos.pexels.com/video-files/6197066/6197066-hd_1920_1080_25fps.mp4 |
 
-- `public/videos/hero-cleaning.mp4`: 20 seconds of kitchen cleaning, 14 seconds of vacuuming, 14 seconds of floor mopping, and 12 seconds of the living-room team. Total: 60 seconds.
+The brighter hero edit uses these additional licensed sources:
+
+| Source                                                                                                                                      | Creator       | Download                                                                     |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ---------------------------------------------------------------------------- |
+| [Bright living room](https://www.pexels.com/video/interior-design-of-the-living-room-6356429/)                                              | Curtis Adams  | https://videos.pexels.com/video-files/6356429/6356429-hd_1280_720_30fps.mp4 |
+| [Uniformed cleaner tending a wooden desk](https://www.pexels.com/video/a-woman-in-black-shirt-and-black-pants-is-cleaning-a-table-9473236/) | Liliana Drew  | https://videos.pexels.com/video-files/9473236/9473236-hd_1080_1920_24fps.mp4 |
+| [Light-filled kitchen with plants](https://www.pexels.com/video/interior-design-and-decors-of-a-home-kitchen-3769953/)                      | Taryn Elliott | https://videos.pexels.com/video-files/3769953/3769953-hd_1920_1080_25fps.mp4 |
+| [Careful surface cleaning](https://www.pexels.com/video/a-person-cleaning-a-table-9462914/)                                                 | Liliana Drew  | https://videos.pexels.com/video-files/9462914/9462914-hd_1080_1920_24fps.mp4 |
+| [Tending a surface around plants](https://www.pexels.com/video/a-woman-cleaning-the-table-while-removing-plants-9462880/)                   | Liliana Drew  | https://videos.pexels.com/video-files/9462880/9462880-hd_1080_1920_24fps.mp4 |
+
+- `public/videos/hero-cleaning.mp4`: 12 seconds of the bright living room, 9 seconds of a uniformed cleaner dusting, 12 seconds of the light-filled kitchen, 9 seconds of careful surface cleaning, 9 seconds of cleaning around plants, and 9 further seconds of the living room. Total: 60 seconds. Framed at 960×960 for the hero composition.
 - `public/videos/care-cleaning.mp4`: 12 seconds of the living-room team, 16 seconds of kitchen cleaning, 16 seconds of floor mopping, and 16 seconds of vacuuming. Total: 60 seconds.
-- Both edits use 1280×720 H.264 video without an audio track. Each has a matching extracted still in `public/images/hero-cleaning-poster.jpg` or `public/images/care-cleaning-poster.jpg`.
+- Both edits use H.264 video without an audio track; the care edit remains 1280×720. Each has a matching extracted still in `public/images/hero-cleaning-poster.jpg` or `public/images/care-cleaning-poster.jpg`.
 - Both have muted inline playback, independent pause/play controls, off-screen and hidden-tab pausing, reduced-motion posters, and image fallbacks. The care section defers loading its video until playback is needed.
 - The previous 12-second casual home-cleaning video has been replaced.
 

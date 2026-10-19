@@ -7,6 +7,8 @@ type CleaningVideoProps = {
   src: string;
   poster: string;
   description: string;
+  width?: number;
+  height?: number;
 };
 
 export default function CleaningVideo({
@@ -14,6 +16,8 @@ export default function CleaningVideo({
   src,
   poster,
   description,
+  width = 1280,
+  height = 720,
 }: CleaningVideoProps) {
   const label = variant === "hero" ? "hero" : "care section";
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -72,8 +76,8 @@ export default function CleaningVideo({
         <img
           src={poster}
           alt={description}
-          width="1280"
-          height="720"
+          width={width}
+          height={height}
           fetchPriority={variant === "hero" ? "high" : "auto"}
         />
       ) : (
@@ -90,8 +94,8 @@ export default function CleaningVideo({
           onPlay={() => setPlaying(true)}
           onPause={() => setPlaying(false)}
           onError={() => setFailed(true)}
-          width="1280"
-          height="720"
+          width={width}
+          height={height}
         />
       )}
       {!failed && (

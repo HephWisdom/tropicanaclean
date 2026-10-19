@@ -48,7 +48,9 @@ test("reduced motion shows a still image until the visitor chooses to play", asy
   const sealBox = await page.locator(".fresh-seal").boundingBox();
   expect(
     buttonBox.x + buttonBox.width <= sealBox.x ||
-      buttonBox.y + buttonBox.height <= sealBox.y,
+      buttonBox.x >= sealBox.x + sealBox.width ||
+      buttonBox.y + buttonBox.height <= sealBox.y ||
+      buttonBox.y >= sealBox.y + sealBox.height,
   ).toBe(true);
   await control.click();
   await expect.poll(() => video.evaluate((el) => el.paused)).toBe(false);

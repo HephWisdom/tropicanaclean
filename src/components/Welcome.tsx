@@ -74,16 +74,18 @@ export function Hero() {
         <CleaningVideo
           src="/videos/hero-cleaning.mp4"
           poster="/images/hero-cleaning-poster.jpg"
-          description="Illustrative footage of uniformed professional cleaners mopping, vacuuming and cleaning a modern home"
+          width={960}
+          height={960}
+          description="Illustrative footage of a bright, welcoming home and a uniformed cleaner carefully tending wooden surfaces and plants"
         />
         <div className="photo-caption">
           <span className="location-dot" />
           <MapPin size={15} /> Manchester, with care.
         </div>
         <div className="fresh-seal">
-          <span>A FRESH PERSPECTIVE</span>
+          <span>FRESH SPACES</span>
           <Motif />
-          <span>ON EVERYDAY LIVING</span>
+          <span>BETTER DAYS</span>
         </div>
       </Reveal>
     </section>

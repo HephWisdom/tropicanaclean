@@ -306,8 +306,12 @@ p {
   animation: nav-underline-reveal 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 @keyframes nav-underline-reveal {
-  from { transform: scaleX(0); }
-  to { transform: scaleX(1); }
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 .mobile-menu nav > a:not(.mobile-phone) {
   position: relative;
@@ -380,7 +384,7 @@ p {
   padding: 51px 0 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   min-width: 0;
 }
 .hero .eyebrow {
@@ -514,7 +518,7 @@ p {
   text-transform: uppercase;
   font-size: 8px;
   letter-spacing: 1.6px;
-  margin-top: 42px;
+  margin-top: 32px;
 }
 .hero-footnote > span {
   height: 1px;
@@ -573,9 +577,9 @@ p {
     border-radius: 90px 5px 5px 5px;
   }
   .hero-video-toggle {
-    left: 16px;
-    right: auto;
-    bottom: 54px;
+    left: auto;
+    right: 16px;
+    bottom: 20px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -608,10 +612,10 @@ p {
 }
 .fresh-seal {
   position: absolute;
-  left: -44px;
-  bottom: 48px;
-  width: 111px;
-  height: 111px;
+  left: -64px;
+  bottom: 24px;
+  width: 128px;
+  height: 128px;
   border-radius: 50%;
   background: var(--lime);
   color: var(--green);
@@ -620,13 +624,13 @@ p {
   align-items: center;
   justify-content: center;
   gap: 7px;
-  transform: rotate(-14deg);
+  transform: none;
   box-shadow: 0 4px 12px #123b3210;
-  border: 6px solid var(--ivory);
+  border: 5px solid var(--ivory);
 }
 .fresh-seal > span {
-  font-size: 5.9px;
-  letter-spacing: 1px;
+  font-size: 9px;
+  letter-spacing: 0.8px;
   font-weight: 600;
 }
 .fresh-seal .motif {
@@ -2091,7 +2095,7 @@ textarea {
     flex-direction: column;
     gap: 34px;
     padding-top: 39px;
-    padding-bottom: 27px;
+    padding-bottom: 76px;
   }
   .hero-copy {
     padding: 0;
@@ -2146,16 +2150,16 @@ textarea {
     object-position: 50% 55%;
   }
   .fresh-seal {
-    width: 95px;
-    height: 95px;
-    left: auto;
-    right: 16px;
-    bottom: -19px;
+    width: 116px;
+    height: 116px;
+    left: 16px;
+    right: auto;
+    bottom: -54px;
     border: 5px solid var(--ivory);
-    gap: 5px;
+    gap: 7px;
   }
   .fresh-seal > span {
-    font-size: 5px;
+    font-size: 8.5px;
     letter-spacing: 0.7px;
   }
   .fresh-seal .motif {
